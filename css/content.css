@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: monospace;
+    color: white;
+    scrollbar-color: rgb(60, 0, 78) rgb(0, 0, 0) ;
+}
+
+body{
+    background-color: #000;
+}
+
+main{
+    padding: 0px 100px 0px 100px;
+}
+
+h1{
+    font-size: 4em;
+    padding-left: 20px;
+}
+
+/* Star Scrolling effect */
+@keyframes move-stars{
+    from {background-position: 0 0;}
+    to {background-position: -10000px 0px;}
+}
+/* The typing effect */
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+@keyframes blink-caret {
+    from, to { border-color: orange; }
+    50% { border-color: transparent; }
+}
+#render{
+    position: absolute;
+    top: 0;
+    left: -25%;
+    z-index: -1;
+    padding-right: 35px;
+}
+
+.info-box{
+    padding: 20px;
+    height: 60%;
+    border:3px solid #fff ;
+    border-radius: 20px;
+    background-color: rgba(219, 219, 219, 0.144);
+}
+
+.info-box h2, p{
+    font-size: 2.5em;
+}
+.box-right {
+    height: 90vh;
+    margin-left: 50%;
+    padding: 100px 0px 0px 70px;
+}
+
+.box-center {
+    padding: 20px 0px 0px 0px;
+}
+ 
+.info-box ul, article{
+    padding: 20px 0px 0px 20px;
+    list-style: none;
+}
+.info-box li, article{
+    margin: 0px 0px 20px 0px;
+}
+#basic-info h2, p{
+    display: inline;
+}
+#basic-info h2{
+    color: red;
+}
+#basic-info p{
+    color: orange;
+}
+
+.stars{
+    position: absolute;
+    top: -20%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 200%;
+    display: block;
+    background: #000 url(../img/2k_stars_milky_way.jpg) repeat-x top center;
+    background-size: 200% 100%;
+    z-index: -1;
+    animation: move-stars 500s linear infinite;
+}
+
+/*.typewriter li {
+    overflow: hidden;
+    border-right: .15em solid transparent;
+    white-space: nowrap;
+    margin: 0 auto; 
+    letter-spacing: .15em;
+    animation: 
+      typing 3s steps(40, end),
+      blink-caret .75s step-end 2;
+}*/
+
+canvas{
+    min-width: 100%;
+    max-width: 100%;
+}
+
+#additional-info{
+    min-height: 500px;
+}

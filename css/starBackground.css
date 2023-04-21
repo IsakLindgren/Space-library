@@ -1,0 +1,20 @@
+/* Star Scrolling effect */
+@keyframes move-stars{
+    from {background-position: 0 0;}
+    to {background-position: -10000px 0px;}
+}
+
+.stars{
+    position: absolute;
+    top: -20%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 200%;
+    display: block;
+    background: #000 url(../img/2k_stars_milky_way.jpg) repeat-x top center;
+    background-size: 200% 100%;
+    z-index: -1;
+    animation: move-stars 500s linear infinite;
+}

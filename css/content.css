@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: monospace;
+    color: white;
+    scrollbar-color: rgb(60, 0, 78) rgb(0, 0, 0) ;
+}
+
+body{
+    background-color: #000;
+}
+
+main{
+    padding: 0px 100px 0px 100px;
+}
+
+h1{
+    font-size: 4em;
+    padding-left: 20px;
+}
+
+/* The typing effect */
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+@keyframes blink-caret {
+    from, to { border-color: orange; }
+    50% { border-color: transparent; }
+}
+
+/*.typewriter li {
+    overflow: hidden;
+    border-right: .15em solid transparent;
+    white-space: nowrap;
+    margin: 0 auto; 
+    letter-spacing: .15em;
+    animation: 
+      typing 3s steps(40, end),
+      blink-caret .75s step-end 2;
+}*/
+
+#render{
+    position: absolute;
+    top: 0;
+    left: -25%;
+    z-index: -1;
+    padding-right: 35px;
+}
+
+canvas{
+    min-width: 100%;
+    max-width: 100%;
+}
+
+.box-right {
+    height: 95vh;
+    margin-left: 50%;
+    padding: 100px 0px 0px 70px;
+}
+
+.box-center {
+    padding: 20px 0px 0px 0px;
+}
+
+/*#region info*/
+
+/*#region info-box*/
+.info-box{
+    padding: 20px;
+    height: 60%;
+    border:3px solid #fff ;
+    border-radius: 20px;
+    background-color: rgba(219, 219, 219, 0.144);
+}
+
+.info-box h2, p{
+    font-size: 2.5em;
+}
+ 
+.info-box ul, article{
+    padding: 20px 0px 0px 20px;
+    list-style: none;
+}
+.info-box li, article{
+    margin: 0px 0px 20px 0px;
+}
+
+/*#endregion*/
+
+#basic-info h2, p{
+    display: inline;
+}
+#basic-info h2{
+    color: red;
+}
+#basic-info p{
+    color: orange;
+}
+
+#additional-info{
+    min-height: 500px;
+}
+/*#endregion*/

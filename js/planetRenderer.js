@@ -29,6 +29,7 @@ import * as THREE from 'https://unpkg.com/three/build/three.module.js';
 
 
                 //load texture
+                try{
                 const planetName = document.getElementById("planetName").innerHTML;
                 switch(planetName){
                     case "Earth":
@@ -55,7 +56,16 @@ import * as THREE from 'https://unpkg.com/three/build/three.module.js';
                         camera.rotation.z = 0.3;
                         break;
                 }
-
+                }
+                catch{
+                    smallPlanetTexture = loader.load('');
+                    largePlanetTexture = loader.load('../img/earth/2k_earth_daymap.jpg');
+                    atmTexture = loader.load('../img/earth/2k_earth_clouds.jpg')
+                    ringTexture = loader.load('');
+                    planetSize = 1;
+                    
+                }
+                
                 
 
                 //renderer

@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: monospace;
+    color: white;
+    scrollbar-color: rgb(60, 0, 78) rgb(0, 0, 0) ;
+}
+
+html{
+    height: 100%;
+}
+
+body{
+    background-color: #000;
+}
+
+#render{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+    overflow: hidden;
+}
+
+#getStarted h1, #getStarted a{
+    font-size: 5em;
+}
+
+#getStarted a{
+    padding: 0 0.25em;
+    border-width: 3px;
+    border-radius: 0.70em;
+    color: white;
+    text-decoration: none;
+}
+
+#getStarted{
+    height: 100vh;
+    max-width: 40%;
+    text-align: center;
+    padding-top: 30vh;
+    margin: auto;
+}

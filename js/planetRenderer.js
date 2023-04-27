@@ -59,8 +59,8 @@ import * as THREE from 'https://unpkg.com/three/build/three.module.js';
                 }
                 catch{
                     smallPlanetTexture = loader.load('');
-                    largePlanetTexture = loader.load('../img/earth/2k_earth_daymap.jpg');
-                    atmTexture = loader.load('../img/earth/2k_earth_clouds.jpg')
+                    largePlanetTexture = loader.load('img/earth/2k_earth_daymap.jpg');
+                    atmTexture = loader.load('img/earth/2k_earth_clouds.jpg')
                     ringTexture = loader.load('');
                     planetSize = 1;
                     

@@ -13,12 +13,12 @@ import * as THREE from 'https://unpkg.com/three/build/three.module.js';
                 camera.position.z = 5;
 
                 //light
-                const light = new THREE.DirectionalLight( 0xffffff, 1 );
+                const light = new THREE.DirectionalLight( 0xffffff, 0.6 );
                 light.position.set(-5, 6, 3);
                 light.castShadow = true;
                 scene.add( light );
 
-                const globalLight = new THREE.AmbientLight(0xffffff, 0.15);
+                const globalLight = new THREE.AmbientLight(0xffffff, 0.015);
                 scene.add(globalLight);
 
                 //light shadow properties

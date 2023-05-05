@@ -6,6 +6,10 @@
     scrollbar-color: rgb(60, 0, 78) rgb(0, 0, 0) ;
 }
 
+html{
+    height: 100%;
+}
+
 body{
     background-color: #000;
 }
@@ -17,6 +21,10 @@ main{
 h1{
     font-size: 4em;
     padding-left: 20px;
+}
+
+p a, h2 a{
+    color: gold;
 }
 
 /* The typing effect */
@@ -70,7 +78,7 @@ canvas{
 /*#region info-box*/
 .info-box{
     padding: 20px;
-    height: 60%;
+    height: fit-content;
     border:3px solid #fff ;
     border-radius: 20px;
     background-color: rgba(219, 219, 219, 0.144);
@@ -80,6 +88,10 @@ canvas{
     font-size: 2.5em;
 }
  
+.info-box sup{
+    color: inherit;
+}
+
 .info-box ul, article{
     padding: 20px 0px 0px 20px;
     list-style: none;
@@ -102,5 +114,10 @@ canvas{
 
 #additional-info{
     min-height: 500px;
+    margin-bottom: 100px;
+}
+
+article h2{
+    text-decoration: underline;
 }
 /*#endregion*/
